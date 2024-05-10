@@ -7,7 +7,7 @@ adminCtrl.getAdmins = async (req, res) => {
         const admins = await Admin.find();
         res.json(admins);
     } catch (error) {
-        res.status(500).json({ message: 'Failed to get admins', error: error.message });
+        res.status(500).json({ message: 'Failed to get admins prueba prueba', error: error.message });
     }
 };
 //----------------------------------------------
