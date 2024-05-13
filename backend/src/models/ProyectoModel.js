@@ -6,6 +6,9 @@ const tareaSchema = new Schema({
   descripcion: { type: String, required: true, trim: true },
   responsable: { type: Schema.Types.ObjectId, ref: 'Colaborador' },
   estado: { type: String, required: true, trim: true }, // Pendiente, En Proceso, Terminada
+  recursosEconomicos: { type: Number, required: true},
+  tiempoEstimado: { type: Number, required: true },
+  storyPoints: { type: Number, required: true },
 });
 
 // Esquema principal para los proyectos
